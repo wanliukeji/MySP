@@ -1,10 +1,9 @@
 <%@include file="header.jsp"%>
-        <!-- page content -->
+
+<!-- page content -->
 <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
-
-
               <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                   <div class="input-group">
@@ -16,15 +15,9 @@
                 </div>
               </div>
             </div>
-
-
-
             <div class="clearfix"></div>
-
             <div class="row">
-
               <div class="clearfix"></div>
-
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
@@ -52,9 +45,7 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-
                   <div class="x_content">
-
                     <div class="table-responsive">
                       <table class="table table-striped jambo_table bulk_action">
                         <thead>
@@ -75,7 +66,6 @@
                           </th>
                         </tr>
                         </thead>
-
                         <tbody>
                         <tr class="even pointer">
                           <td class="a-center ">
