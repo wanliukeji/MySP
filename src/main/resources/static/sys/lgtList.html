@@ -1,0 +1,62 @@
+                <!-- menu profile quick info -->
+                <script src="../../static/js/jses/headtop.js"></script>
+                <div class="profile clearfix" style="background-color: #7a792e;">
+                    <div class="profile_pic">
+                        <img src="/static/images/ting.jpg" alt="..." class="img-circle profile_img">
+                    </div>
+                    <div class="profile_info">
+                        <span>欢迎使用</span>
+                        <h2>陈育</h2>
+                    </div>
+                </div>
+                <!-- /menu profile quick info -->
+                <br />
+                <!--左侧菜单栏-->
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu" style="background-color: #7a792e;">
+                    <div class="menu_section" id="app">
+                        <ul class="nav side-menu" id="nav_v_for">
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- top navigation -->
+        <script src="../../static/js/jses/headnav.js"></script>
+        <!-- /top navigation -->
+        <!-- page content -->
+        <script src="../../static/js/jses/table.js"></script>
+        <!-- /page content -->
+        <script src="../../static/js/footer.js"></script>
+        <script type="text/javascript" charset="UTF-8">
+                    var strHtml ="";
+                    var str = "";
+                    $(document).ready(function(){
+                        $.ajax({
+                            type:"POST",
+                            url:" http://localhost:8080/login.html/trees",
+                            dataType:"json",
+                            success:function(data){
+                                $.each(data,function(i,value) {
+                                    str += "<li onclick='y(this)'><a><i class='" + value.lcon + "'></i>"+value.name + "<span class='fa fa-chevron-down'></span><br></a><ul class='nav child_menu'><br>" + f(value.child,value)  + "</ul></li>";
+                                });
+                                $("#nav_v_for").html(str);
+                            },
+                            error:function(jqXHR){
+                                alert('连接失败');
+                            }
+                        });
+                        function f(date,obj) {
+                            var strchild = "";
+                            $.each(date,function(k,obj) {
+                                strchild += "<li><a href='index.html"+k+"'>" + obj.name + "</a></li><br>";
+                            });
+                            return strchild;
+                        }
+                    });
+                    function y(obj) {
+                       $(obj).find("ul").slideToggle("slow");
+                    }
+        </script>
