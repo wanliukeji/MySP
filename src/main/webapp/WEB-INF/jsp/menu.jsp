@@ -1,10 +1,5 @@
 <%@include file="header.jsp"%>
-
         <!-- page content -->
-<div id="showDate">
-
-</div>
-
 <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
@@ -238,7 +233,6 @@
         </div>
         <!-- /page content -->
 
-
 <%@include file="footer.jsp"%>
 <script src="../static/js/public.js"></script>
 <script type="text/javascript" charset="UTF-8">
@@ -283,5 +277,4 @@
         }
 
     });
-
 </script>

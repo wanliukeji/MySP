@@ -1,17 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Chenny
-  Date: 2019/3/12
-  Time: 21:04
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-
-</head>
-<body>
-
+</div>
+</div>
 <!-- jQuery -->
 <script src="${pageContext.request.contextPath}/vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
